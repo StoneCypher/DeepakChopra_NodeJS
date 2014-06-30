@@ -9,8 +9,8 @@ var path = require('path');
 var app  = require('commander');
 
 app.version('0.0.4')
-   .option('-c, --count',         'Count of Choprifications to deliver')
-   .option('--source [filename]', 'Provide your own source datafiles')
+   .option('-c, --count [pos integer]', 'Count of Choprifications to deliver')
+   .option('--source [filename]',       'Provide your own source datafiles')
    .parse(process.argv);
 
 
