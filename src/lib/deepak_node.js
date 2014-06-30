@@ -8,9 +8,9 @@ var path = require('path');
 
 var app  = require('commander');
 
-app.version('0.0.2')
+app.version('0.0.4')
    .option('-c, --count',         'Count of Choprifications to deliver')
-   .option('--source [filename]', 'Filename to source data from')
+   .option('--source [filename]', 'Provide your own source datafiles')
    .parse(process.argv);
 
 
@@ -23,6 +23,7 @@ function DeepakGenerator() {
 
     var libdir = path.join(path.dirname(fs.realpathSync(__filename)), '../lib');
     var source = app.source || path.join(libdir, '/default_deepak_data.json');
+    var count  = parseInt(app.c || app.count || '1', 10);
 
 
 
@@ -39,8 +40,13 @@ function DeepakGenerator() {
 
 
     if (fs.existsSync(source)) {
+        
         var Data = require(source);
-        console.log(makeDC(Data));
+
+        for (var i=0; i<count; ++i) {
+            console.log(makeDC(Data));
+        }
+
     } else {
         console.log('\nFatal error: requested source datafile does not exist.\n  "' + source + '"');
     }
