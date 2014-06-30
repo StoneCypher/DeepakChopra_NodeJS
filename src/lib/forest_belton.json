@@ -1,0 +1,11 @@
+{
+
+    "pattern"    : [ "starts", "middles", "qualifiers", "finishadj", "finishes" ],
+
+    "starts"     : ["Zygo", "Prepro", "Mutually ", "Lazy "],
+    "middles"    : ["histomorphic ", "semi-recursive ", "monadic co-generator ", "tail call transflecting "],
+    "qualifiers" : ["quasi-typed ", "union typed ", "non-lambda typed ", "duck typed ", "zermelo franklin typed ", "secretly ML "],
+    "finishadj"  : ["eigen-", "trans-", "hapto-", "lepto-", "carne-asado-"],
+    "finishes"   : ["matrix.", "combinator.", "comonoid.", "antisecant.", "thunk."]
+
+}
