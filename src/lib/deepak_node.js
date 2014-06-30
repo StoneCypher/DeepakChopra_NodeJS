@@ -6,6 +6,13 @@
 var fs   = require('fs');
 var path = require('path');
 
+var app  = require('commander');
+
+app.version('0.0.2')
+   .option('-c, --count',         'Count of Choprifications to deliver')
+   .option('--source [filename]', 'Filename to source data from')
+   .parse(process.argv);
+
 
 
 
@@ -15,7 +22,7 @@ function DeepakGenerator() {
 
 
     var libdir = path.join(path.dirname(fs.realpathSync(__filename)), '../lib');
-    var source = (process.argv.length > 2)? process.argv[2] : path.join(libdir, '/default_deepak_data.json');
+    var source = app.source || path.join(libdir, '/default_deepak_data.json');
 
 
 
