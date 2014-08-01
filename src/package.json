@@ -1,12 +1,26 @@
 {
-    "author"       : "John Haugeland",
-    "name"         : "choprify",
-    "description"  : "Provides the wisdom of Deepak Chopra",
-    "version"      : "1.0.1",
-    "repository"   : { "url" : "https://github.com/StoneCypher/DeepakChopra_NodeJS" },
-    "main"         : "./lib/choprify",
-    "keywords"     : [ "deepak", "chopra", "guru", "wisdom", "insight" ],
-    "bin"          : { "choprify": "./bin/choprify" },
-    "dependencies" : { "commander": "2.0.0" },
-    "engines"      : { "node": "*" }
+  "author": "John Haugeland",
+  "name": "choprify",
+  "description": "Provides the wisdom of Deepak Chopra",
+  "version": "1.0.2",
+  "repository": {
+    "url": "https://github.com/StoneCypher/DeepakChopra_NodeJS"
+  },
+  "main": "./lib/choprify",
+  "keywords": [
+    "deepak",
+    "chopra",
+    "guru",
+    "wisdom",
+    "insight"
+  ],
+  "bin": {
+    "choprify": "./bin/choprify"
+  },
+  "dependencies": {
+    "commander": "2.0.0"
+  },
+  "engines": {
+    "node": "*"
+  }
 }
