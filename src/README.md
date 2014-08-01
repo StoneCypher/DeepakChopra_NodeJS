@@ -1,6 +1,8 @@
 choprify
 ========
 
+[![NPM Downloads](http://img.shields.io/npm/dm/choprify.svg)](https://npmjs.org/package/choprify)
+
 This is a small text generator with the noble goal of dispensing
 the meaningful life changing advice and wisdom of Deepak Chopra.
 
