@@ -1,9 +1,12 @@
 choprify
 ========
 
-![Language](http://img.shields.io/badge/Language-JavaScript-000000.svg)
-![Language](http://img.shields.io/badge/Platform-NPM-000000.svg)
-![Language](http://img.shields.io/badge/License-MIT-000055.svg)
+![Language](http://img.shields.io/badge/Language-JavaScript-000000.svg) &nbsp;
+![Language](http://img.shields.io/badge/Platform-NPM-000000.svg) &nbsp;
+![Language](http://img.shields.io/badge/License-MIT-000055.svg) &nbsp;
+![Status](http://img.shields.io/travis/StoneCypher/DeepakChopra_NodeJS.svg) &nbsp;
+![Release](http://img.shields.io/github/release/StoneCypher/DeepakChopra_NodeJS.svg) &nbsp;
+[![Issues](http://img.shields.io/github/issues/StoneCypher/DeepakChopra_NodeJS.svg)](https://github.com/StoneCypher/DeepakChopra_NodeJS/issues)
 
 [![NPM Downloads](http://img.shields.io/npm/dm/choprify.svg)](https://npmjs.org/package/choprify)
 
