@@ -2,7 +2,7 @@
   "author": "John Haugeland",
   "name": "choprify",
   "description": "Provides the wisdom of Deepak Chopra",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": {
     "url": "https://github.com/StoneCypher/DeepakChopra_NodeJS"
   },
