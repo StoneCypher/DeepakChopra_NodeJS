@@ -1,6 +1,10 @@
 choprify
 ========
 
+![Language](http://img.shields.io/badge/Language-JavaScript-white.svg)]
+![Language](http://img.shields.io/badge/Platform-NPM-white.svg)]
+![Language](http://img.shields.io/badge/License-MIT-white.svg)]
+
 [![NPM Downloads](http://img.shields.io/npm/dm/choprify.svg)](https://npmjs.org/package/choprify)
 
 This is a small text generator with the noble goal of dispensing
