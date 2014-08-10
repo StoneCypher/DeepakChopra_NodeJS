@@ -53,10 +53,16 @@ function DeepakGenerator() {
 
 
 
+console.log('Passed through');
+
+
+
 }
+console.log('Passed behind');
 
 
 
 
 
 exports.choprify = DeepakGenerator;
+console.log('Passed out');

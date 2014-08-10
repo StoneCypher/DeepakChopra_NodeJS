@@ -18,9 +18,13 @@
     "choprify": "./bin/choprify"
   },
   "dependencies": {
-    "commander": "2.0.0"
+    "commander": "2.0.0",
+    "jasmine-node": "*"
   },
   "engines": {
     "node": "*"
+  },
+  "scripts": {
+    "test": "node node_modules/jasmine-node/lib/jasmine-node/cli.js spec"
   }
 }
