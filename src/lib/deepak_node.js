@@ -1,4 +1,5 @@
 
+/*jshint node:true*/
 // deepak_node.js
 
 'use strict';
@@ -53,16 +54,10 @@ function DeepakGenerator() {
 
 
 
-console.log('Passed through');
-
-
-
 }
-console.log('Passed behind');
 
 
 
 
 
 exports.choprify = DeepakGenerator;
-console.log('Passed out');
