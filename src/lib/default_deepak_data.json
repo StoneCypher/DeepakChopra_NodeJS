@@ -184,6 +184,7 @@
         "local ",
         "post-",
         "hyper-",
+        "ecto",
         "trans-",
         "extra-",
         "super-",
