@@ -1,7 +1,5 @@
-DeepakChopra_NodeJS
-===================
-
-Deepak Chopra nonsense phrase generator implementation in JavaScript, as a NodeJS application
+choprify
+========
 
 ![Language](http://img.shields.io/badge/Language-JavaScript-000000.svg) &nbsp;
 ![Language](http://img.shields.io/badge/Platform-NPM-000000.svg) &nbsp;
@@ -19,4 +17,39 @@ Needless to say, it's a random text generator.
 How to use
 ----------
 
-Follow the [NodeJS instructions](https://github.com/StoneCypher/DeepakChopra_NodeJS/blob/master/src/README.md).
+Simple enough.  Install globally or locally.  For the example,
+we'll install globally, because that's terrible advice, and this
+is a Wisdom of Chopra generator.
+
+```
+npm install -g choprify
+```
+
+Then it's as simple as
+
+```
+choprify
+```
+
+Next, wait for some insight.
+
+
+
+Options
+-------
+
+* `-c` or `--count`
+  * Issued with a number, this tells Chopra how much information to
+    provide.
+* `--source`
+  * Allows you to provide your own data.  (Remember that many shells
+    will expect `./foo.json`.)  There is an example in the `lib`
+    directory called `forest_belton.json` which provides alternate
+    data and an alternate construction.
+
+
+
+Polemic
+=======
+
+`choprify` is MIT licensed, because viral licenses and newspeak language modification are evil. Free is only free when it's free for everyone.

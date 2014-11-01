@@ -4,6 +4,6 @@
 var path = require('path');
 var fs   = require('fs');
 
-var lib  = path.join( path.dirname( fs.realpathSync(__filename) ), '../lib/deepak_node.js' );
+var lib  = path.join( path.dirname( fs.realpathSync(__filename) ), 'deepak_node.js' );
 
 require(lib).choprify();

@@ -2,11 +2,11 @@
   "author": "John Haugeland",
   "name": "choprify",
   "description": "Provides the wisdom of Deepak Chopra",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "repository": {
     "url": "https://github.com/StoneCypher/DeepakChopra_NodeJS"
   },
-  "main": "./lib/choprify",
+  "main": "./choprify.js",
   "keywords": [
     "deepak",
     "chopra",
@@ -15,15 +15,16 @@
     "insight"
   ],
   "bin": {
-    "choprify": "./bin/choprify"
+    "choprify": "./choprify"
   },
   "dependencies": {
-    "commander": "2.0.0"
+    "commander": "2.0.0",
+    "vows": "*"
   },
   "engines": {
     "node": "*"
   },
   "scripts": {
-    "test": "node node_modules/jasmine-node/lib/jasmine-node/cli.js spec"
+    "test": "vows test/* --spec"
   }
 }

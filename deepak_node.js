@@ -9,7 +9,7 @@ var path = require('path');
 
 var app  = require('commander');
 
-app.version('1.0.1')
+app.version('1.2.0')
    .option('-c, --count [pos integer]', 'Count of Choprifications to deliver')
    .option('--source [filename]',       'Provide your own source datafiles')
    .parse(process.argv);
@@ -22,7 +22,7 @@ function DeepakGenerator() {
 
 
 
-    var libdir = path.join(path.dirname(fs.realpathSync(__filename)), '../lib');
+    var libdir = path.join(path.dirname(fs.realpathSync(__filename)), '.');
     var source = app.source || path.join(libdir, '/default_deepak_data.json');
     var count  = parseInt(app.c || app.count || '1', 10);
 
@@ -41,7 +41,7 @@ function DeepakGenerator() {
 
 
     if (fs.existsSync(source)) {
-        
+
         var Data = require(source);
 
         for (var i=0; i<count; ++i) {
