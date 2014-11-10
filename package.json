@@ -17,6 +17,10 @@
   "bin": {
     "choprify": "./choprify"
   },
+  "devDependencies": {
+    "gulp": "*",
+    "sc-eslint": "*"
+  },
   "dependencies": {
     "commander": "2.0.0",
     "vows": "*"
