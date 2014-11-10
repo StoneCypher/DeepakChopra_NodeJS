@@ -1,17 +1,22 @@
 
-/*jshint node:true*/
+/* jshint node: true */
+/* eslint no-sync: 0 */
+/* eslint-env node, browser */
+
 // deepak_node.js
 
-'use strict';
+"use strict";
 
-var fs   = require('fs');
-var path = require('path');
+var fs   = require("fs"),
+    path = require("path"),
 
-var app  = require('commander');
+    app  = require("commander");
 
-app.version('1.2.0')
-   .option('-c, --count [pos integer]', 'Count of Choprifications to deliver')
-   .option('--source [filename]',       'Provide your own source datafiles')
+var i;
+
+app.version("1.2.0")
+   .option("-c, --count [pos integer]", "Count of Choprifications to deliver")
+   .option("--source [filename]",       "Provide your own source datafiles")
    .parse(process.argv);
 
 
@@ -22,9 +27,9 @@ function DeepakGenerator() {
 
 
 
-    var libdir = path.join(path.dirname(fs.realpathSync(__filename)), '.');
-    var source = app.source || path.join(libdir, '/default_deepak_data.json');
-    var count  = parseInt(app.c || app.count || '1', 10);
+    var libdir = path.join(path.dirname(fs.realpathSync(__filename)), ".");
+    var source = app.source || path.join(libdir, "/default_deepak_data.json");
+    var count  = parseInt(app.c || app.count || "1", 10);
 
 
 
@@ -33,8 +38,10 @@ function DeepakGenerator() {
     }
 
     function makeDC(Data) {
-        var out = '';
-        for (var i in Data.pattern) { out += randFrom(Data[Data.pattern[i]]); }
+        var out = "";
+        Data.pattern.map(function(i) {
+            out += randFrom(Data[i]);
+        });
         return out;
     }
 
@@ -42,14 +49,15 @@ function DeepakGenerator() {
 
     if (fs.existsSync(source)) {
 
+        /* eslint vars-on-top: 0 */
         var Data = require(source);
 
-        for (var i=0; i<count; ++i) {
+        for (i=0; i<count; ++i) {
             console.log(makeDC(Data));
         }
 
     } else {
-        console.log('\nFatal error: requested source datafile does not exist.\n  "' + source + '"');
+        console.log("\nFatal error: requested source datafile does not exist.\n  \"" + source + "\"");
     }
 
 

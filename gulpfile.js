@@ -1,6 +1,7 @@
 
 /* jshint node: true */
 /* eslint-env node, browser */
+
 "use strict";
 
 var gulp     = require("gulp"),
