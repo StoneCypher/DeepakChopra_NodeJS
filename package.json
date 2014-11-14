@@ -12,7 +12,11 @@
     "chopra",
     "guru",
     "wisdom",
-    "insight"
+    "insight",
+    "generate",
+    "generator",
+    "text generator",
+    "StoneCypher"
   ],
   "bin": {
     "choprify": "./choprify"
